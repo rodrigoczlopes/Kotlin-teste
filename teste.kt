@@ -9,6 +9,13 @@ fun main() {
 	println("Titular: $titular")
     println("Conta Número: $numeroConta")
     
+    testaCondicoes(saldo)
+    
+ 
+	
+}
+
+fun testaCondicoes(saldo: Double){
     if(saldo > 0.0){
         println("Seu saldo é positivo, de: $saldo")
     }else if(saldo == 0.0){
@@ -16,12 +23,12 @@ fun main() {
     }else{
         println ("Seu saldo está negativo: $saldo")
     }
-    // when e if são iguais, só muda a maneira como eles são escritos
-    when{
-        saldo > 0.0 -> println("Seu saldo é positivo, de: $saldo")
-        saldo == 0.0 -> println("Seu saldo é de: $saldo")
-        else -> println ("Seu saldo está negativo: $saldo")
-        
-    }
-	
+    
 }
+   // when e if são iguais, só muda a maneira como eles são escritos
+   // when{
+      //  saldo > 0.0 -> println("Seu saldo é positivo, de: $saldo")
+      //  saldo == 0.0 -> println("Seu saldo é de: $saldo")
+       // else -> println ("Seu saldo está negativo: $saldo")
+        
+   // }
